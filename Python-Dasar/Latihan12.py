@@ -29,9 +29,7 @@ def math_operations(a, b):
     return addition, subtraction, multiplication, divison
 
 add, subtract, multiply, divide = math_operations (10, 2)
-print(result)
-
-# %% kasus 4
+print(add, subtract, multiply, divide)
 
 
 
