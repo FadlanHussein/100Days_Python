@@ -3,6 +3,7 @@
 # %% Kasus 1
 # [expression for item in iterable if condition]
 
+from _typeshed import importlib
 squares = [x**2 for x in range (10)]
 print(squares)
 
@@ -101,8 +102,14 @@ kandidat_terpilih = [
     else f"{k[0]} - standard"
     for k in kandidat if k[1] < 35 and k[2] >=2 and k[3] >=80
 ]
-print("\n--- Hasil Seleksi Final ---")
-for nama in kandidat_terpilih:
-    print(nama)
 
+fast_track = [ 
+    nama for nama in kandidat_terpilih if "Fast Track" in nama
+]
+standard =[
+    nama for nama in kandidat_terpilih if "standard" in nama
+]
+print("\n--- Hasil Seleksi Final ---")
+for nama in fast_track: print(nama)
+for nama in standard: print (nama)
 # %%
