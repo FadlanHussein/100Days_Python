@@ -62,4 +62,3 @@ try:
     print("Generate Password:", password)
 except ValueError as e:
     print(e)
-# %%
