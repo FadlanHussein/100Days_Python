@@ -1,0 +1,7 @@
+Nasi Goreng
+Ingredients: Nasi, Telur, Bawang, Kecap
+Instructions: Tumis bawang, masukkan telur, masukkan nasi, tambahkan kecap, aduk rata.
+
+Telur Dadar
+Ingredients: Telur, Daun Bawang, Garam
+Instructions: Kocok telur bersama bahan lainnya, lalu goreng hingga matang.
