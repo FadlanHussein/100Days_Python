@@ -63,7 +63,7 @@ while True:
         for name in recipes:
             print(name)
     elif choice == '3':
-            print ("Existinf the program: ")
+            print ("Existing the program: ")
             break
 
 # %%
