@@ -43,7 +43,7 @@ from pathlib import Path
 
 base_dir = Path(__file__).resolve().parent
 input_path = base_dir.parent/'0.Sample'/'D-17 Input Generator.csv'
-output_path -base_dir.parent/'0.Sample'/'D-17 Report Generator.csv'
+output_path = base_dir.parent/'0.Sample'/'D-17 Report Generator.csv'
 
 # Step 1: Read student data anda calculate averages
 
@@ -72,15 +72,15 @@ def process_student_data(input_file, output_file):
         
 
 # Step 2: Write processed data to a new CSV
-            with open(output_file, 'w', newline ='') as outfile:
-                fieldnames = ['Name', 'Math', 'Science', 'English', 'Average', 'Status']
-                writer = csv.DictWriter(outfile, fieldnames=fieldnames)
-                writer.writerheader()
-                writer.writerows(student_reports)
+        with open(output_file, 'w', newline ='') as outfile:
+            fieldnames = ['Name', 'Math', 'Science', 'English', 'Average', 'Status']
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(student_reports)
 
-                print(f"Student report generated in (output_file) successfully.")
+            print(f"Student report generated in {output_file} successfully.")
 
-    except.FileNotFoundError:
+    except FileNotFoundError:
         print(f"Error: File '{input_file}' not found")
     except KeyError:
         print("Error: Invalid coloumn names in the input file")
@@ -91,4 +91,4 @@ def process_student_data(input_file, output_file):
 input_file = 'D-17 Input Generator.csv'
 output_file = 'D-17 Report Generator.csv'
 
-process_student_data(input_file, output_file)
+process_student_data(input_path, output_path)
