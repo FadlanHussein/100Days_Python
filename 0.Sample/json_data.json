@@ -1,4 +1,14 @@
 [
-  { "task": "Learn Python JSON", "status": "Incomplete" },
-  { "task": "Build a To-Do App", "status": "Complete" }
+  {
+    "task": "Belajar menulis file JSON dengan Python",
+    "status": "Incomplete"
+  },
+  {
+    "task": "Belajar menulis file JSON dengan Python",
+    "status": "Incomplete"
+  },
+  {
+    "task": "Memperkaya daya JSON",
+    "status": "succes"
+  }
 ]
