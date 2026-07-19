@@ -55,3 +55,18 @@ task.append ({"task": "Memperkaya daya JSON", "status": "succes"})
 with open(file_path, 'a') as file:
     json.dump(task, file, indent=4)
 print("Data berhasil ditambahkan!!")
+
+# %% Kasus 5
+import json
+import os
+base_dir = os.path.dirname(__file__)
+file_path = os.path.join(base_dir, "..", "0.Sample", "json_data.json")
+# Baca file dulu agar variabel 'task' terdefinisi di sel ini
+with open(file_path, 'r') as file:
+    task = json.load(file)
+# Tampilkan data satu per satu
+print("--- DAFTAR TUGAS ---")
+for item in task:
+    print(f"- Tugas: {item['task']} | Status: {item['status']}")
+
+# %%
