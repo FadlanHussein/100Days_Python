@@ -26,7 +26,7 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather(city):
     try:
-        url = f"{BASE_URL}?Q={city}&appid={API_KEY}&units=metric"
+        url = f"{BASE_URL}?q={city}&appid={API_KEY}&units=metric"
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
@@ -44,3 +44,19 @@ def get_weather(city):
     except Exception as e:
         print(f"Error: {str(e)}")
         return None
+
+# Step 3: Display Weather Information
+def display_weather(weather):
+    print("---- Weather Information ----")
+    for key, value in weather.items():
+        print(f"{key}: {value}")
+        
+# Step 4: Main program loop
+while True:
+    print("\n---- Weather App ----")
+    city = input("Enter a city name (or 'q' to quit): ").strip()
+    if city.lower() == 'q':
+        break
+    weather = get_weather(city)
+    if weather:
+        display_weather(weather)
