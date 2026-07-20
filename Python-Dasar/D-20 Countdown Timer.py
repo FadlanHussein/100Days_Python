@@ -18,7 +18,42 @@ print("Formatted Date: ", formatted_date)
 # %% Count Down Timer Function
 from datetime import datetime
 
-event_date = datetime(2026, 7, 20)
+event_date = datetime(2026, 11, 20)
 current_date = datetime.now()
 time_difference = event_date - current_date
 print("Time Difference: ", time_difference)
+
+# %% Project : Event Countdown Timer
+from datetime import datetime, timedelta
+import time
+
+# Step 1: Get Event Date and Timer from User
+def get_event_datetime():
+    try:
+        date_input = input("Enter the event date (YYYY-MM-DD HH:MM:SS): ")
+        event_datetime = datetime.strptime(date_input, "%Y-%m-%d %H:%M:%S")
+        return event_datetime
+    except ValueError:
+        print("Invalid date and time format. Please try again.")
+        return None
+
+# Step 2: Calculate Time Remaining
+def calculate_time_remaining(event_date):
+    current_datetime = datetime.now()
+    time_difference = event_date - current_datetime
+    return time_difference
+
+# Step 3: Display Cuntdown Timer
+def display_countdown(time_left):
+    days = time_left.days
+    hours = time_left.seconds // 3600
+    minutes = (time_left.seconds % 3600) // 60
+    seconds = time_left.seconds % 60
+    print(f"Time Remaining: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds")
+
+# Step 4: Main program loop
+while True:
+    print("\n---- Countdown Timer ----")
+    event_date = get_event_datetime()
+    if event_date:
+        
