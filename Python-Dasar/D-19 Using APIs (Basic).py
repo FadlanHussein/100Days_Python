@@ -30,7 +30,14 @@ def get_weather(city):
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
-            return data
+            weather = {
+                "City": data['name'],
+                "Temperature": data['main']['temp'],
+                "Humidity": data['main']['humidity'],
+                "Description": data['weather'][0]['description'],
+                "Wind Speed": data['wind']['speed']
+            }
+            return weather
         else:
             print("City Not Found!")
             return None
