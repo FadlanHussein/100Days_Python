@@ -51,9 +51,19 @@ def display_countdown(time_left):
     seconds = time_left.seconds % 60
     print(f"Time Remaining: {days} days, {hours} hours, {minutes} minutes, {seconds} seconds")
 
-# Step 4: Main program loop
-while True:
-    print("\n---- Countdown Timer ----")
-    event_date = get_event_datetime()
-    if event_date:
+# Step 4: Main Countdown loop
+def start_countdown(event_datetime):
+    while True:
+        time_left = calculate_time_remaining(event_datetime)
+        if time_left.total_seconds() <= 0:
+            print("\n---- Countdown Complete!! ----")
+            break
+        display_countdown(time_left)
+        time.sleep(1)
+
+# Step 5: Main Program loop
+event_datetime = get_event_datetime()
+if event_datetime:
+    print(f"Event set for: {event_datetime}")
+    start_countdown(event_datetime)
         
