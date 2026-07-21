@@ -33,7 +33,7 @@ print(f"Page title: {soup.title.string}")
 from bs4 import BeautifulSoup
 
 html_content = "<h1>Main Title</h1><p> This is paraghrap </p> <a href='https://example.com'>Click Here</a>"
-soup = BeautifulSoup(html_content, "hrml.parser")
+soup = BeautifulSoup(html_content, "html.parser")
 
 print(soup.h1.text)
 print(soup.p.text)
