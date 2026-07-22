@@ -49,7 +49,7 @@ class BankAccount:
         self.account_holder = account_holder
         self.balance = initial_balance
 
-    #Deposit Money
+    # Deposit Money
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
@@ -57,11 +57,19 @@ class BankAccount:
         else:
             print("Invalid deposit amount. Amount must be greater than 0.")
 
+    # Withdraw Money
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+            print(f"Withdrawn ${amount}, New Balance: ${self.balance}")
+        else:
+            print("Invalid withdrawal amount or insufficient balance.")
+
     # Show Account Details
     def show_details(self):
         print(f"\n---- Account Details ----")
         print(f"Account Holder: {self.account_holder}")
-        print(f"Account Balance: {self.balance}")
+        print(f"Account Balance: ${self.balance}")
 
 # Main Program
 accounts = {}
@@ -72,12 +80,6 @@ def create_account ():
     account = BankAccount(name, initial_deposit)
     accounts[name] = account
     print("Account created successfully")
-def withdraw(self, amount):
-    if amount > 0 and amount <= self.balance:
-        self.balance -= amount
-        print(f"Withdrawn ${amount}, New Balance: ${self.balance}")
-    else:
-        print(f"Invalid withdrawl amount or insufficient balance.")
 
 def access_account():
     name = input("Enter your name: ").strip()
