@@ -73,6 +73,10 @@ class Cat(Animal):
     def make_sound(self):
         print("Meow! Meow!")
 
+class Cow(Animal):
+    def make_sound(self):
+        print("Mooo! Mooo!")
+
 class Duck(Animal):
     def make_sound(self):
         print("Quack! Quack!")
@@ -83,9 +87,9 @@ class AnimalSoundSimulator:
         self.animals = []
 
     def add_animal(self, animal):
-        if isinstance(animals, Animal):
+        if isinstance(animal, Animal):
             self.animals.append(animal)
-            print(f"{animal.__class__,__name__} added to the simulator")
+            print(f"{animal.__class__.__name__} added to the simulator")
         else:
             print("Invalid animal type") 
 
@@ -98,7 +102,7 @@ class AnimalSoundSimulator:
                 animal.make_sound()
 
 # Main Program
-simulator = AnimalSimulator()
+simulator = AnimalSoundSimulator()
 
 while True:
     print("\n---- Animal Sound Simulator ----")
@@ -112,17 +116,17 @@ while True:
     choice = input("Enter your choice (1-6): ")
 
     if choice == '1':
-        simulator.add.append_animal(Dog())
+        simulator.add_animal(Dog())
     elif choice == '2':
         simulator.add_animal(Cat())
     elif choice == '3':
-        simulator.add.append_animal(Cow())
-    elif choice == '4':
         simulator.add_animal(Cow())
-    elif choice == '5':
+    elif choice == '4':
         simulator.add_animal(Duck())
     elif choice == '5':
+        simulator.make_all_sounds()
+    elif choice == '6':
         print("Exiting the simulator. Goodbye!!!")
         break
     else:
-        print("Invalide choice. Please try again")
+        print("Invalid choice. Please try again")
