@@ -52,11 +52,36 @@ class GrandParent:
     def display(self):
         print("I am Grand Parent class")
 
-class Parent(Grandparent):
+class Parent(GrandParent):
     pass
 class Child(Parent):
     pass
 
 child = Child()
 child.display()
+
+# %% Kasus 2 The Super () Function
+
+class Animal:
+    def __init__(self):
+        print("Animal Created")
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Dog Created")
+
+dog = Dog()
+
+
+# %% Kasus 3 Method Overriding
+class Vehicle:
+    def fuel_type(self):
+        print("Final type: Petrol/Diesel")
+
+class ElectricCar(Vehicle):
+    def fuel_type(self):
+        print("Fuel type: Electrical")
+
+car = ElectricCar()
+car.fuel_type()
 
