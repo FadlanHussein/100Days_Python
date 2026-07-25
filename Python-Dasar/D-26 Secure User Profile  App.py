@@ -105,7 +105,7 @@ class UserProfile:
 
     # Display Profile
     def display_profile(self):
-        print("n\---- ")
+        print("\n---- User Profile ----")
         print(f"Username: {self.username}")
         print(f"Email: {self._email}")
         print(f"Password: {self.__password}")
@@ -114,22 +114,22 @@ class UserProfile:
 users = []
 
 def create_user():
-    username = input("Enter Username")
+    username = input("Enter Username: ")
     email = input("Enter Email: ")
     password = input("Enter password: ")
     user = UserProfile(username, email, password)
-    user.append(user)
+    users.append(user)
     print("User created successfully")
 
 def view_profile():
     if not users:
         print("No users found")
     else:
-        for user in user:
+        for user in users:
             user.display_profile()
 
 def update_email():
-    email = input("Enter Email to update email: ")
+    username = input("Enter username to update email: ")
     for user in users:
         if user.username == username:
             new_email = input("Enter new email: ")
@@ -160,4 +160,3 @@ while True:
     else:
         print("Invalid choice. Please try again")
         
-
