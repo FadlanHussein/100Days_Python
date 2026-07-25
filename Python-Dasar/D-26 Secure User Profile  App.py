@@ -1,5 +1,4 @@
-# Kasus 1 Encapsulation
-
+# %% Kasus 1 Encapsulation
 class User:
     def __init__(self, username, password):
         self.username = username
@@ -19,3 +18,20 @@ user = User("Fadlan Hussein", "Secure 123")
 print(user.username)
 print(user.get_password())
 user.set_password("NewPassword")
+
+# %% Kasus 2 Public, Protected, and Private Attributes
+class UserProfile:
+    def __init__(self, username, email, password):
+        self.username = username
+        self._email = email
+        self.__password = password
+
+    def show_profile(self):
+        print(f"Username: {self.username}")
+        print(f"Email: {self._email}")
+        print(f"Password: {self.__password}")
+
+user = UserProfile("Alice", "husseinfadlan16@gmail.com", "Secure123")
+user.show_profile()
+
+
