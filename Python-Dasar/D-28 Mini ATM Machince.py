@@ -106,5 +106,41 @@ class ATM:
 
             if choice == '1':
                 account.check_balance()
-                
-        
+            elif choice == '2':
+                amount = float(input("Enter deposit amount: "))
+                account.deposit(amount)
+                account.withdraw(amount)
+            elif choice == '4':
+                old_pin = input("Enter old PIN: ")
+                new_pin = input("Enter new PIN: ")
+                account.change_pin(old_pin, new_pin)
+            elif choice == '5':
+                print("Logging out. Thank you for using out ATM.")
+                break
+            else:
+                print("Invalid choice. Please select a valid option.")
+
+# Main Menu
+def main_menu(self):
+    while True:
+        print("\n---- Welcome to Mini ATM Machine ----")
+        print("1. Create Account")
+        print("2. Access Account")
+        print("3. Exit")
+
+        choice = input("Choose an option (1-3): ")
+        if choice == '1':
+            self.create_account()
+        elif choice == '2':
+            self.authenticate_amount()
+        elif choice == '3':
+            print("Thank you for using Mini ATM Machine. Goofdbye!")
+            break
+        else:
+            print("Invalid Choice Please Try Again")
+
+# Start Menu
+if __name__ == "__main__":
+    atm = ATM()
+    atm.main_menu()
+    
