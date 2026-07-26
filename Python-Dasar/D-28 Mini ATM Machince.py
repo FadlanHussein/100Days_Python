@@ -73,5 +73,38 @@ class ATM:
     # Create Account
     def create_account(self):
         account_number = input("Enter account number: ")
-        pin =
+        pin = input("Set a 4-digit PIN: ")
+        if len(pin) == 4 and pin.isdigit():
+            self.accounts(account_number) = BankAccount(account_number, pin)
+            print("Account created successfully.")
+        else:
+            print("Invalid PIN. PIN must be 4 digits.")
+
+    # Authenticate Account
+    def authenticate_account(self):
+        account_number = input("Enter account number: ")
+        pin = input("Enter PIN: ")
+
+        account = self.accounts.get(account_number)
+        if account and account.validate_pin(pin):
+            print("Authentocation Succesful.")
+            self.accounts_menu(account)
+        else:
+            print("Invalid account number of PIN")
+
+    # aCCOUNT Menu
+    def account_menu(self, account):
+        while True:
+            print("\n---- Account Menu: ----")
+            print("1. Check Balance")
+            print("2. Deposit")
+            print("3. Withdraw")
+            print("4. Change PIN")
+            print("5. Logout")
+
+            choice = input("Enter your choice(1-5): ")
+
+            if choice == '1':
+                account.check_balance()
+                
         
