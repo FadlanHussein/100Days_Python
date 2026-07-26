@@ -16,7 +16,7 @@ root.mainloop()
 import tkinter as tk
 
 # Main Window
-root - tk.Tk()
+root = tk.Tk()
 root.title("Simple GUI Example")
 root.geometry("300x200")
 
@@ -58,5 +58,52 @@ def greet():
 
 button = tk.Button(root, text="Greet", command=greet)
 button.pack()
+
+root.mainloop()
+
+# %% Kasus 4 Project GUI
+import tkinter as tk
+
+# Main Window
+root = tk.Tk()
+root.title("Simple GUI app")
+root.geometry("400x300")
+root.configure(bg="#f0f0f0")
+
+# Title Label
+title_label = tk.Label(root, text="Welcome to my GUI App!!", font=("Arial", 18), bg="#f0f0f0")
+title_label.pack(pady=20)
+
+# Name Entry
+name_label = tk.Label(root, text="Enter your name:", font=("Arial", 12), bg="#f0f0f0")
+name_label.pack()
+
+name_entry = tk.Entry(root, font=("Arial", 12), width=30)
+name_entry.pack(pady=10)
+
+# Greeting Label
+greeting_label = tk.Label(root, text="", font=("Arial", 12), bg="#f0f0f0")
+greeting_label.pack(pady=10)
+
+# Greeting Function
+def greet_user():
+    name = name_entry.get()
+    if name:
+        greeting_label.config(text=f"Hello, {name}!", fg="green")
+    else:
+        greeting_label.config(text="Please enter your name!", fg="red")
+
+# Reset Function
+def reset():
+    name_entry.delete(0, tk.END)
+    greeting_label.config(text="", fg="black")
+
+# Greet Button
+greet_button = tk.Button(root, text="Greet", font=("Arial", 12), command=greet_user)
+greet_button.pack(pady=10)
+
+# Reset Button
+reset_button = tk.Button(root, text="Reset", font=("Arial", 12), command=reset)
+reset_button.pack(pady=10)
 
 root.mainloop()
