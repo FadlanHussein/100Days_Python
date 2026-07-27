@@ -78,7 +78,7 @@ root = tk.Tk()
 root.title("Button Events")
 root.geometry("300x200")
 
-def toogle_button():
+def toggle_button():
     if button['state'] == 'normal':
         button.config(state='disabled')
         toggle_btn.config(text="Enable Button")
@@ -94,5 +94,56 @@ toggle_btn = tk.Button(root, text="Disable Button", command=toggle_button)
 toggle_btn.pack(pady=10)
 
 root.mainloop()
+
+# %% Kasus 5 Project: Click Counter App
+
+import tkinter as tk
+
+# Main Window
+root = tk.Tk()
+root.title("Click Counter App")
+root.geometry("400x300")
+root.configure("#c3f2fd")
+
+# Reset Fuction
+def increment():
+    global counter
+    counter += 1
+    counter_label.config(text=f"Clicks: {counter}")
+
+# Reset Function
+def reset():
+    global counter
+    counter = 0
+    counter_label.config(text="Click: 0")
+
+# Title Label
+title_label = tk.Label(root, text="Click Counter", font=("Arial", 20), bg="#e3f2fd")
+title_label.pack(pady=20)
+
+# Counter Label
+counter_label = tk.Label(root, text="Clicks: 0", font=("Arial", 16), bg="#e3f2fd")
+counter_label.pack(pady=10)
+
+# Increment Button
+increment_button = tk.Button(root, text="Click Me", command=increment, font=("Arial", 14), bg="#e3f2fd", fg="black")
+increment_button.pack(pady=10)
+
+# Reset Button
+reset_button = tk.Button(root, text="Reset", command=reset, font=("Arial", 14), bg="#e3f2fd", fg="black")
+reset_button.pack(pady=10)
+
+# Exit Button
+exit_button = tk.Button(root, text="Exit", command=root.destroy, font=("Arial", 14), bg="#607d8b", fg="black")
+exit_button.pack(pady=20)
+
+#
+#  Run the App
+root.mainloop()
+
+
+
+
+
 
 
