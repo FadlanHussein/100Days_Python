@@ -68,4 +68,75 @@ root4.mainloop()
 
 
 
-# %%
+# %% Kasus 5 D-32 Drawing Pad App
+
+from tkinter import colorchooser
+
+# Main Window
+root5 = tk.Tk()
+root5.title("Drawing Pad App")
+root5.geometry("600x600")
+root5.configure(bg="#f0f0f0")
+
+# Global Variables
+current_color = "black"
+current_thickness = 2
+
+# Create Canvas
+canvas5 = tk.Canvas(root5, width=500, height=400, bg="white", relief="ridge", bd=2)
+canvas5.pack(pady=20)
+
+# Drawing Function
+def draw(event):
+    x, y = event.x, event.y
+    canvas5.create_oval(
+        x - current_thickness, y - current_thickness,
+        x + current_thickness, y + current_thickness,
+        fill=current_color, outline=current_color 
+    )
+
+# Clear Canvas
+def clear_canvas():
+    canvas5.delete("all")
+
+# Change Color
+def change_color():
+    global current_color
+    # Open color chooser and set the selected color as current
+    color = colorchooser.askcolor(title="Choose Color")
+    # askcolor returns ( (r,g,b), '#rrggbb' ) or (None, None) if cancelled
+    if color and color[1]:
+        current_color = color[1]
+        # If the button exists, update its background to reflect the chosen color
+        try:
+            color_btn.config(bg=current_color)
+        except NameError:
+            pass
+
+# Change Thickness
+def change_thickness(value):
+    global current_thickness
+    current_thickness = int(value)
+
+# Bind Drawing
+canvas5.bind("<B1-Motion>", draw)
+
+# Control Panel
+control_frame = tk.Frame(root5, bg="#f0f0f0")
+control_frame.pack(pady=20)
+
+color_btn = tk.Button(control_frame, text="Choose Color", command=change_color, bg="#4CAF50", fg="black", font=("Arial", 10))
+color_btn.grid(row=0, column=0, padx=10)
+
+clear_btn = tk.Button(control_frame, text="Clear Canvas", command=clear_canvas, bg="#f44336", fg="black", font=("Arial", 10))
+clear_btn.grid(row=0, column=1, padx=10)
+
+thickness_label = tk.Label(control_frame, text="Thickness:", bg="#f0f0f0", font=("Arial", 10))
+thickness_label.grid(row=0, column=2, padx=10)
+
+thickness_slider = tk.Scale(control_frame, from_=1, to=10, orient="horizontal", command=change_thickness, bg="#f0f0f0")
+thickness_slider.set(2)
+thickness_slider.grid(row=0, column=3, padx=10)
+
+# Run Application
+root5.mainloop()
