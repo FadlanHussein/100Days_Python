@@ -33,7 +33,7 @@ EXPENSES_FILE = "expenses.csv"
 # Create the main application window
 root = tk.Tk()
 root.title("Expense Tracker App")
-root.geometry("600x400")
+root.geometry("700x520")
 root.configure(bg="#f0f0f0")
 
 # Expense Data List
@@ -41,12 +41,18 @@ expenses = []
 
 # Load Existing Expenses from CSV
 def load_expenses():
-    if os.path.exists(EXPENSES_FILE):
-        with open(EXPENSES_FILE, mode='r', newline='') as file:
-            reader = csv.reader(csvfile)
-            for row in reader:
-                expenses.append(row)
-                expenses_listbox.insert(tk.END, f"{row[0]} | {row[1]} | {row[2]}")
+    if not os.path.exists(EXPENSES_FILE):
+        return
+
+    with open(EXPENSES_FILE, mode='r', newline='') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            if not row:
+                continue
+            expenses.append(row)
+            expenses_listbox.insert(tk.END, f"{row[0]} | {row[1]} | {row[2]}")
+
+    calculate_total()
 
 # Save Expenses to CSV
 def save_expenses():
@@ -58,16 +64,22 @@ def save_expenses():
 
 # Add Expense Function
 def add_expense():
-    category = category_entry.get()
-    amount = amount_entry.get()
-    description = description_entry.get()
+    category = category_var.get()
+    amount = amount_entry.get().strip()
+    description = description_entry.get().strip()
 
-    if not amount.isdigit() or not category or not description:
+    try:
+        amount_value = float(amount)
+    except ValueError:
+        messagebox.showerror("Error", "Please enter a valid numeric amount.")
+        return
+
+    if category == "Select Category" or not description:
         messagebox.showerror("Error", "Please enter valid details.")
         return
 
-    expenses.append([category, amount, description])
-    expenses_listbox.insert(tk.END, f"{category} | {amount} | {description}")
+    expenses.append([category, str(amount_value), description])
+    expenses_listbox.insert(tk.END, f"{category} | {amount_value:.2f} | {description}")
     calculate_total()
     clear_input()
     save_expenses()
@@ -93,7 +105,7 @@ def clear_input():
 
 # Calculate Total Expenses
 def calculate_total():
-    total = sum(int(expense[1]) for expense in expenses)
+    total = sum(float(expense[1]) for expense in expenses)
     total_label.config(text=f"Total Expenses: ${total:.2f}")
 
 # Clear All Expenses Function
@@ -138,3 +150,38 @@ btn_frame = tk.Frame(root, bg="#f0f0f0")
 btn_frame.pack(pady=10)
 
 add_button = tk.Button(btn_frame, text="Add Expense", command=add_expense, font=("Arial", 12), bg="#4caf50", fg="white")
+add_button.grid(row=0, column=0, padx=5)
+
+delete_button = tk.Button(btn_frame, text="Delete Expense", command=delete_expense, font=("Arial", 12), bg="#f44336", fg="white")
+delete_button.grid(row=0, column=1, padx=5)
+
+clear_button = tk.Button(btn_frame, text="Clear All", command=clear_all, font=("Arial", 12), bg="#1e88e5", fg="white")
+clear_button.grid(row=0, column=2, padx=5)
+
+# Expenses Listbox with Scrollbar
+frame_listbox = tk.Frame(root, bg="#f0f0f0")
+frame_listbox.pack(pady=10)
+
+scrollbar = tk.Scrollbar(frame_listbox)
+scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+expenses_listbox = tk.Listbox(frame_listbox, height=10, width=50, yscrollcommand=scrollbar.set)
+expenses_listbox.pack(side=tk.LEFT, fill=tk.BOTH)
+
+scrollbar.config(command=expenses_listbox.yview)
+
+# Total Expenses Label
+total_label = tk.Label(root, text="Total Expenses: $0.00", font=("Arial", 14, "bold"), bg="#f0f0f0")
+total_label.pack(pady=10)
+
+# Load existing expenses on startup
+expenses_listbox.delete(0, tk.END)
+load_expenses()
+calculate_total()
+
+# Exit Button
+exit_button = tk.Button(root, text="Exit", command=root.quit, font=("Arial", 12), bg="#9e9e9e", fg="white")
+exit_button.pack(pady=10)
+
+# Start the main event loop
+root.mainloop()
