@@ -34,7 +34,7 @@ EXPENSES_FILE = "expenses.csv"
 root = tk.Tk()
 root.title("Expense Tracker App")
 root.geometry("700x520")
-root.configure(bg="#f0f0f0")
+root.configure(bg="#d38787")
 
 # Expense Data List
 expenses = []
@@ -123,7 +123,7 @@ title_label = tk.Label(root, text="Expense Tracker", font=("Arial", 24), bg="#f0
 title_label.pack(pady=10)
 
 # Input Frame
-input_frame = tk.Frame(root, bg="#f0f0f0")
+input_frame = tk.Frame(root, bg="#b84f4f")
 input_frame.pack(pady=10)
 
 # Category Input
