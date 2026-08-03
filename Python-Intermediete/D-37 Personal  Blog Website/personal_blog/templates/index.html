@@ -1,0 +1,8 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Welcome to My Personal Blog</h1>
+{% for post in posts %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+<small>Published on: {{ post.author }}</small>
+<a href="/post/{{ post.id }}">Read More</a>
+{% endfor %} {% endblock %}
