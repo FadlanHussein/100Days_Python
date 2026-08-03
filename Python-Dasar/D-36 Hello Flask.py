@@ -28,33 +28,32 @@
 # Ensure flask is installed on your system.
 # You can run: pip install flask
 # To verify installation use: python -m flask --version
+# %% Kasus 1:
+from flask import Flask
 
-from flask import Flask, render_template
-
-# %% Kasus 1: Membuat instance Flask
+# Create Flask App
 app = Flask(__name__)
 
-# %% Kasus 2: Route dasar untuk halaman home
-@app.route("/")
-def home():
-    return render_template("index.html")
+# Define a route
+@app.route('/')
+def hello():
+    return "Hello, Flask!"
 
-# %% Kasus 3: Route dinamis dengan parameter URL
-@app.route("/greet/<name>")
-def greet(name):
-    return render_template("greet.html", name=name)
+# Run the app
+if __name__ == '__main__':
+    app.run(debug=True) 
+# %% Flask Templates
+from flask import render_template
 
-# %% Kasus 4: Bonus route About
-@app.route("/about")
-def about():
-    return render_template("about.html")
+# Create Flask App
+app = Flask(__name__)
 
-# %% Kasus 5: Custom 404 page
-@app.errorhandler(404)
-def page_not_found(error):
-    return render_template("404.html"), 404
+# Define a route
+@app.route('/')
+def hello():
+    return render_template('D-36 template.html', name='Flask')
 
-
-# %% Kasus 6: Menjalankan aplikasi Flask
-if __name__ == "__main__":
+# Run the app
+if __name__ == '__main__':
     app.run(debug=True)
+    
