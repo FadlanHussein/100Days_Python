@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form method="POST" action="/submit">
+      {{ form.hidden_tag() }}
+      <p>{{ form.name.label }}<br />{{ form.name}}</p>
+      <p></p>
+      <p>{{ form.email.label }}<br />{{ form.email}}</p>
+      <p></p>
+      <p>{{ form.message.label }}<br />{{ form.message}}</p>
+      <p></p>
+      <p>{{ form.submit() }}</p>
+    </form>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+  </body>
+</html>
