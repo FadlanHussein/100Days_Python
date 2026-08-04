@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='Template', static_folder='Static')
 app.secret_key = 'your_secret_key'
 
 # Contact Form Class
@@ -21,3 +21,11 @@ def contact():
         # Here you can handle the form submission, e.g., save to database or send an email
         return redirect(url_for('success'))
     return render_template('contact.html', form=form)
+
+# Success page route
+@app.route('/success')
+def success():
+    return render_template('success.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5005)
