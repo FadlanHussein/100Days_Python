@@ -63,10 +63,22 @@ def register():
         </form>
     ''')
 
+# Home Route
+@app.route("/")
+def index():
+    return render_template_string('''
+        <h1>Welcome to My App</h1>
+        <p>Ini adalah halaman utama yang terpisah.</p>
+        <ul>
+            <li><a href="{{ url_for('register') }}">Go to Register</a></li>
+            <li><a href="{{ url_for('login') }}">Go to Login</a></li>
+        </ul>
+    ''')
 
 # Login Route
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     return "Login functionality is not implemented yet."
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5005)
+    app.run(debug=True, port=5006)
