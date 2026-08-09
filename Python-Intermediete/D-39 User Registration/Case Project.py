@@ -1,5 +1,8 @@
+# pyrefly: ignore [missing-import]
 from flask import Flask, flash, redirect, render_template_string, request, url_for
+# pyrefly: ignore [missing-import]
 from flask_sqlalchemy import SQLAlchemy
+# pyrefly: ignore [missing-import]
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
