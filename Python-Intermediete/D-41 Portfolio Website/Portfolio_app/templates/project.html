@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }}{% endblock %}
+
+{% block content %}
+<section class="project-detail-section">
+  <a href="{{ url_for('index') }}" class="back-link">&larr; Kembali ke Daftar Project</a>
+  
+  <div class="project-detail-card">
+    <img src="{{ project.image_url }}" alt="{{ project.title }}" class="project-detail-img">
+    <div class="project-detail-body">
+      <h1>{{ project.title }}</h1>
+      <p class="description">{{ project.description }}</p>
+      
+      {% if project.link and project.link != '#' %}
+      <a href="{{ project.link }}" target="_blank" class="btn">Kunjungi Project</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

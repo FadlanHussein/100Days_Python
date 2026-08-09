@@ -44,6 +44,7 @@ def register():
             return 'Username atau email sudah terdaftar', 400
 
         hashed_password = generate_password_hash(password)
+        # pyrefly: ignore
         user = User(username=username, email=email, password=hashed_password)
 
         try:
