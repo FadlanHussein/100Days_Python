@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
@@ -29,6 +29,19 @@ def get_weather_by_city(city):
         return jsonify({city: weather_data[city]})
     return jsonify({"error": "City not found"}), 404
 
+# Add new weather data for a city
+@app.route('/weather/<city>', methods=['POST'])
+def add_weather(city):
+    data = request.get_json()
+    city = data.get('city', city).title()
+    temperature = data.get('temperature')
+    condition = data.get('condition')
+
+    if not city or temperature is None or not condition:
+        return jsonify({"error": "Missing data"}), 400
+
+    weather_data[city] = {"temperature": temperature, "condition": condition}
+    return jsonify({"message": f"Weather data for {city} added successfully."}), 201
 # Run Application
 if __name__ == '__main__':
     app.run(debug=True, port=5006)
