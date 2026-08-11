@@ -1,0 +1,301 @@
+Date,City,Country,Temperature,Temp_Min,Temp_Max,Humidity,Wind_Speed_kmh,Precipitation_mm,Weather_Condition
+2025-01-01,Bandung,Indonesia,24.2,21.5,28.3,93,22.1,9.6,Rainy
+2025-01-01,London,United Kingdom,5.2,1.2,8.6,83,13.9,0.6,Cloudy
+2025-01-01,Surabaya,Indonesia,28.6,25.7,33.2,88,17.6,17.1,Thunderstorm
+2025-01-01,Sydney,Australia,25.6,22.9,29.5,74,24.5,1.2,Windy
+2025-01-01,Tokyo,Japan,5.1,2.5,8.8,64,22.2,1.5,Cloudy
+2025-01-06,Bandung,Indonesia,24.1,20.4,29.3,79,14.1,0.1,Cloudy
+2025-01-06,London,United Kingdom,4.2,1.0,8.1,98,30.7,3.2,Drizzle
+2025-01-06,Surabaya,Indonesia,29.7,27.0,33.3,58,8.6,0.0,Sunny
+2025-01-06,Sydney,Australia,25.3,21.6,28.7,68,14.9,0.9,Partly Cloudy
+2025-01-06,Tokyo,Japan,5.2,1.6,10.6,58,12.2,0.0,Clear
+2025-01-11,Bandung,Indonesia,22.4,19.4,25.9,95,19.9,23.8,Thunderstorm
+2025-01-11,London,United Kingdom,3.3,-0.4,7.2,96,27.1,3.7,Drizzle
+2025-01-11,Surabaya,Indonesia,32.1,28.7,35.8,62,14.7,0.0,Hot/Sunny
+2025-01-11,Sydney,Australia,26.2,23.4,29.6,87,19.6,4.6,Rainy
+2025-01-11,Tokyo,Japan,5.7,1.8,9.2,75,12.6,9.9,Rainy
+2025-01-16,Bandung,Indonesia,23.3,20.3,27.9,96,21.1,16.6,Rainy
+2025-01-16,London,United Kingdom,2.8,-1.0,7.3,93,22.8,4.4,Drizzle
+2025-01-16,Surabaya,Indonesia,32.4,28.1,36.1,67,16.3,0.0,Hot/Sunny
+2025-01-16,Sydney,Australia,26.0,22.4,29.0,78,26.7,0.0,Windy
+2025-01-16,Tokyo,Japan,5.8,2.2,11.2,57,13.9,0.0,Sunny
+2025-01-21,Bandung,Indonesia,24.9,22.2,29.1,98,14.6,27.4,Rainy
+2025-01-21,London,United Kingdom,4.2,0.3,8.2,95,21.0,31.7,Rainy
+2025-01-21,Surabaya,Indonesia,30.8,27.2,34.5,88,27.1,32.7,Thunderstorm
+2025-01-21,Sydney,Australia,24.1,21.5,27.2,70,22.7,0.0,Partly Cloudy
+2025-01-21,Tokyo,Japan,5.4,1.2,9.2,53,16.4,0.0,Sunny
+2025-01-26,Bandung,Indonesia,24.0,21.1,27.3,84,24.5,1.6,Partly Cloudy
+2025-01-26,London,United Kingdom,4.2,-0.3,7.4,83,12.0,1.6,Cloudy
+2025-01-26,Surabaya,Indonesia,29.9,27.2,34.0,91,26.6,17.7,Thunderstorm
+2025-01-26,Sydney,Australia,23.9,20.3,27.3,71,25.7,0.9,Partly Cloudy
+2025-01-26,Tokyo,Japan,2.5,-0.1,5.6,80,16.8,4.8,Snowy
+2025-01-31,Bandung,Indonesia,24.8,20.4,30.1,82,18.7,0.8,Cloudy
+2025-01-31,London,United Kingdom,4.7,1.3,8.8,58,7.0,0.0,Sunny
+2025-01-31,Surabaya,Indonesia,32.5,28.2,35.9,58,8.4,0.0,Sunny
+2025-01-31,Sydney,Australia,24.2,19.8,28.6,53,5.7,0.0,Sunny
+2025-01-31,Tokyo,Japan,2.7,-1.4,7.8,76,32.0,4.1,Snowy
+2025-02-05,Bandung,Indonesia,22.5,18.8,27.2,89,26.0,0.2,Cloudy
+2025-02-05,London,United Kingdom,5.3,2.4,10.1,92,25.4,3.5,Drizzle
+2025-02-05,Surabaya,Indonesia,30.4,26.7,34.9,95,22.5,21.5,Thunderstorm
+2025-02-05,Sydney,Australia,24.0,20.9,28.9,63,11.0,0.0,Sunny
+2025-02-05,Tokyo,Japan,4.8,1.3,9.9,61,11.4,1.9,Cloudy
+2025-02-10,Bandung,Indonesia,22.2,19.2,25.9,86,27.8,1.2,Partly Cloudy
+2025-02-10,London,United Kingdom,2.6,-0.1,7.0,92,26.4,22.2,Rainy
+2025-02-10,Surabaya,Indonesia,32.0,29.5,37.0,73,12.4,1.9,Cloudy
+2025-02-10,Sydney,Australia,23.5,19.7,27.2,82,28.9,31.9,Rainy
+2025-02-10,Tokyo,Japan,6.6,2.1,9.8,68,16.3,0.3,Cloudy
+2025-02-15,Bandung,Indonesia,24.4,21.4,29.3,77,27.0,0.2,Partly Cloudy
+2025-02-15,London,United Kingdom,3.8,-0.6,9.2,84,14.5,0.4,Overcast
+2025-02-15,Surabaya,Indonesia,32.3,29.5,35.4,74,10.8,0.9,Cloudy
+2025-02-15,Sydney,Australia,22.9,18.8,28.1,87,30.5,26.9,Rainy
+2025-02-15,Tokyo,Japan,3.7,0.4,7.4,50,15.0,0.0,Sunny
+2025-02-20,Bandung,Indonesia,23.4,19.0,28.4,85,22.6,0.3,Cloudy
+2025-02-20,London,United Kingdom,5.7,1.5,9.3,94,29.3,3.3,Drizzle
+2025-02-20,Surabaya,Indonesia,31.3,28.7,35.5,56,9.5,0.0,Hot/Sunny
+2025-02-20,Sydney,Australia,25.8,22.7,30.4,88,22.7,34.4,Rainy
+2025-02-20,Tokyo,Japan,4.7,1.9,9.7,73,23.3,0.0,Cloudy
+2025-02-25,Bandung,Indonesia,23.5,19.4,27.6,98,15.8,31.7,Rainy
+2025-02-25,London,United Kingdom,6.5,2.2,11.1,82,22.0,1.0,Overcast
+2025-02-25,Surabaya,Indonesia,30.2,26.8,34.5,59,10.6,0.0,Hot/Sunny
+2025-02-25,Sydney,Australia,23.2,19.3,27.6,76,16.8,1.3,Partly Cloudy
+2025-02-25,Tokyo,Japan,7.8,5.1,13.2,68,20.7,0.1,Cloudy
+2025-03-02,Bandung,Indonesia,23.1,19.0,27.6,98,25.5,16.9,Thunderstorm
+2025-03-02,London,United Kingdom,5.9,2.2,9.1,98,28.1,3.3,Drizzle
+2025-03-02,Surabaya,Indonesia,31.9,27.8,37.3,68,8.7,0.0,Hot/Sunny
+2025-03-02,Sydney,Australia,22.2,19.6,27.7,49,10.4,0.0,Sunny
+2025-03-02,Tokyo,Japan,7.8,5.0,12.2,60,9.0,0.0,Clear
+2025-03-07,Bandung,Indonesia,24.8,22.3,29.7,98,28.1,9.6,Rainy
+2025-03-07,London,United Kingdom,5.6,2.0,10.0,95,26.4,22.4,Rainy
+2025-03-07,Surabaya,Indonesia,32.7,29.3,37.1,56,6.7,0.0,Sunny
+2025-03-07,Sydney,Australia,23.1,18.9,27.5,78,23.5,0.9,Partly Cloudy
+2025-03-07,Tokyo,Japan,8.0,5.1,12.7,48,8.2,0.0,Clear
+2025-03-12,Bandung,Indonesia,22.8,19.7,26.5,98,15.0,5.1,Thunderstorm
+2025-03-12,London,United Kingdom,4.6,0.4,8.6,73,16.1,0.0,Sunny
+2025-03-12,Surabaya,Indonesia,31.7,28.9,35.2,91,21.3,13.3,Thunderstorm
+2025-03-12,Sydney,Australia,23.6,20.3,26.6,72,25.4,1.5,Windy
+2025-03-12,Tokyo,Japan,9.6,6.5,14.5,53,8.6,0.0,Clear
+2025-03-17,Bandung,Indonesia,22.7,19.5,27.4,82,26.6,1.7,Partly Cloudy
+2025-03-17,London,United Kingdom,5.4,2.0,8.5,83,15.9,0.4,Cloudy
+2025-03-17,Surabaya,Indonesia,33.9,30.3,39.2,68,13.4,0.0,Sunny
+2025-03-17,Sydney,Australia,23.1,19.8,28.0,82,21.4,29.6,Rainy
+2025-03-17,Tokyo,Japan,10.8,7.5,15.7,75,17.8,0.4,Cloudy
+2025-03-22,Bandung,Indonesia,25.3,20.9,28.8,98,14.5,7.5,Rainy
+2025-03-22,London,United Kingdom,8.2,5.5,13.2,89,30.6,21.3,Rainy
+2025-03-22,Surabaya,Indonesia,32.8,29.2,36.3,81,20.9,0.3,Cloudy
+2025-03-22,Sydney,Australia,22.0,17.7,25.9,65,25.0,1.2,Partly Cloudy
+2025-03-22,Tokyo,Japan,10.9,8.3,16.3,62,21.7,1.6,Cloudy
+2025-03-27,Bandung,Indonesia,24.2,21.0,28.5,92,28.4,30.1,Thunderstorm
+2025-03-27,London,United Kingdom,9.5,6.5,14.5,58,11.0,0.0,Sunny
+2025-03-27,Surabaya,Indonesia,30.8,26.4,35.4,87,26.7,16.7,Thunderstorm
+2025-03-27,Sydney,Australia,22.4,18.7,26.2,65,18.1,0.6,Partly Cloudy
+2025-03-27,Tokyo,Japan,10.0,6.1,13.8,59,9.5,0.0,Sunny
+2025-04-01,Bandung,Indonesia,24.4,21.2,28.0,98,17.5,25.3,Thunderstorm
+2025-04-01,London,United Kingdom,8.4,4.5,12.5,75,17.3,0.6,Overcast
+2025-04-01,Surabaya,Indonesia,30.5,26.1,33.7,92,16.8,20.5,Thunderstorm
+2025-04-01,Sydney,Australia,19.8,16.0,23.7,76,19.9,2.0,Windy
+2025-04-01,Tokyo,Japan,12.8,9.2,17.5,75,18.5,18.6,Rainy
+2025-04-06,Bandung,Indonesia,25.4,21.0,30.1,83,15.0,1.5,Cloudy
+2025-04-06,London,United Kingdom,8.6,5.5,13.4,92,13.1,2.6,Drizzle
+2025-04-06,Surabaya,Indonesia,32.6,28.6,37.1,64,8.9,0.0,Sunny
+2025-04-06,Sydney,Australia,19.4,15.0,24.0,79,23.5,30.9,Rainy
+2025-04-06,Tokyo,Japan,12.4,9.0,16.2,63,15.7,1.4,Cloudy
+2025-04-11,Bandung,Indonesia,24.4,20.3,28.4,98,13.1,23.0,Rainy
+2025-04-11,London,United Kingdom,9.4,5.7,13.9,61,10.9,0.0,Sunny
+2025-04-11,Surabaya,Indonesia,31.0,27.4,34.8,67,12.3,0.0,Hot/Sunny
+2025-04-11,Sydney,Australia,19.4,15.2,24.9,64,23.3,1.2,Windy
+2025-04-11,Tokyo,Japan,13.8,10.4,17.3,52,17.2,0.0,Sunny
+2025-04-16,Bandung,Indonesia,24.7,21.9,28.7,86,15.2,0.1,Partly Cloudy
+2025-04-16,London,United Kingdom,10.8,7.0,16.1,76,21.7,1.1,Cloudy
+2025-04-16,Surabaya,Indonesia,31.5,27.3,34.7,62,15.2,0.0,Hot/Sunny
+2025-04-16,Sydney,Australia,20.6,16.4,23.8,72,24.8,1.2,Partly Cloudy
+2025-04-16,Tokyo,Japan,16.5,13.6,20.0,55,8.1,0.0,Sunny
+2025-04-21,Bandung,Indonesia,24.5,21.8,27.6,87,10.5,1.2,Partly Cloudy
+2025-04-21,London,United Kingdom,11.9,9.0,16.2,81,20.5,0.4,Cloudy
+2025-04-21,Surabaya,Indonesia,31.3,27.5,36.5,62,12.5,0.0,Sunny
+2025-04-21,Sydney,Australia,19.0,15.5,22.2,76,22.1,0.7,Windy
+2025-04-21,Tokyo,Japan,17.5,14.1,21.7,81,22.0,33.1,Rainy
+2025-04-26,Bandung,Indonesia,24.6,21.2,28.4,93,20.1,34.0,Thunderstorm
+2025-04-26,London,United Kingdom,12.1,8.6,16.2,79,12.4,0.5,Overcast
+2025-04-26,Surabaya,Indonesia,32.3,27.8,36.9,91,22.4,4.3,Thunderstorm
+2025-04-26,Sydney,Australia,17.2,12.9,21.4,56,14.2,0.0,Sunny
+2025-04-26,Tokyo,Japan,18.3,15.1,23.0,85,28.3,33.2,Rainy
+2025-05-01,Bandung,Indonesia,25.6,22.1,30.4,98,31.6,29.6,Thunderstorm
+2025-05-01,London,United Kingdom,13.3,10.0,18.6,65,15.7,0.0,Sunny
+2025-05-01,Surabaya,Indonesia,31.3,27.7,35.3,68,8.6,0.0,Hot/Sunny
+2025-05-01,Sydney,Australia,16.6,13.5,21.1,80,21.7,17.0,Rainy
+2025-05-01,Tokyo,Japan,17.3,14.8,21.3,63,12.1,0.9,Cloudy
+2025-05-06,Bandung,Indonesia,23.9,19.7,27.9,98,28.2,25.4,Thunderstorm
+2025-05-06,London,United Kingdom,11.5,7.1,15.3,87,26.4,0.2,Overcast
+2025-05-06,Surabaya,Indonesia,31.7,27.9,36.8,55,17.5,0.0,Hot/Sunny
+2025-05-06,Sydney,Australia,15.1,12.3,20.3,65,27.4,0.9,Partly Cloudy
+2025-05-06,Tokyo,Japan,18.4,14.4,22.3,78,16.8,34.4,Rainy
+2025-05-11,Bandung,Indonesia,23.6,19.7,28.5,98,24.6,4.7,Rainy
+2025-05-11,London,United Kingdom,12.1,9.3,15.8,74,11.0,0.6,Overcast
+2025-05-11,Surabaya,Indonesia,33.6,29.1,38.5,86,26.1,27.2,Thunderstorm
+2025-05-11,Sydney,Australia,15.8,12.4,19.4,87,15.6,24.7,Rainy
+2025-05-11,Tokyo,Japan,19.4,15.5,24.0,85,19.6,30.4,Rainy
+2025-05-16,Bandung,Indonesia,24.1,21.1,27.7,98,25.6,31.8,Rainy
+2025-05-16,London,United Kingdom,13.4,8.9,18.5,80,16.5,0.8,Overcast
+2025-05-16,Surabaya,Indonesia,30.7,27.3,34.6,83,18.2,1.4,Cloudy
+2025-05-16,Sydney,Australia,15.1,11.2,18.2,82,29.3,2.8,Rainy
+2025-05-16,Tokyo,Japan,19.8,16.1,23.8,75,12.6,1.8,Cloudy
+2025-05-21,Bandung,Indonesia,23.2,19.1,26.7,85,23.0,1.4,Cloudy
+2025-05-21,London,United Kingdom,13.0,9.8,16.3,93,15.5,26.8,Rainy
+2025-05-21,Surabaya,Indonesia,32.4,28.2,37.0,61,15.3,0.0,Sunny
+2025-05-21,Sydney,Australia,14.0,10.4,19.4,68,24.8,0.5,Windy
+2025-05-21,Tokyo,Japan,22.9,18.5,28.2,51,15.1,0.0,Clear
+2025-05-26,Bandung,Indonesia,25.0,22.0,29.7,88,17.1,0.2,Partly Cloudy
+2025-05-26,London,United Kingdom,13.8,10.8,16.9,63,16.9,0.0,Sunny
+2025-05-26,Surabaya,Indonesia,30.9,28.2,34.8,82,26.9,1.6,Cloudy
+2025-05-26,Sydney,Australia,13.8,11.2,18.9,76,10.8,0.2,Windy
+2025-05-26,Tokyo,Japan,22.7,18.6,27.6,76,13.5,17.7,Rainy
+2025-05-31,Bandung,Indonesia,25.6,21.7,30.0,90,25.0,1.3,Cloudy
+2025-05-31,London,United Kingdom,17.0,14.3,21.7,62,5.8,0.0,Sunny
+2025-05-31,Surabaya,Indonesia,32.1,27.7,35.8,76,27.1,0.9,Cloudy
+2025-05-31,Sydney,Australia,13.6,9.2,19.0,79,24.8,24.0,Rainy
+2025-05-31,Tokyo,Japan,21.9,17.4,25.2,64,16.7,0.8,Cloudy
+2025-06-05,Bandung,Indonesia,25.0,21.4,29.5,87,24.2,1.5,Cloudy
+2025-06-05,London,United Kingdom,14.8,10.6,18.1,91,12.3,21.6,Rainy
+2025-06-05,Surabaya,Indonesia,31.9,28.8,37.4,62,15.4,0.0,Hot/Sunny
+2025-06-05,Sydney,Australia,13.1,10.3,17.2,61,11.2,0.0,Sunny
+2025-06-05,Tokyo,Japan,24.7,22.2,29.7,64,13.7,1.6,Cloudy
+2025-06-10,Bandung,Indonesia,24.3,21.2,28.9,92,28.9,35.0,Rainy
+2025-06-10,London,United Kingdom,15.4,12.6,20.0,63,10.0,0.0,Sunny
+2025-06-10,Surabaya,Indonesia,31.1,28.4,35.9,86,18.4,31.7,Thunderstorm
+2025-06-10,Sydney,Australia,13.9,10.8,18.2,79,14.3,28.3,Rainy
+2025-06-10,Tokyo,Japan,26.1,22.6,29.4,61,26.4,1.5,Cloudy
+2025-06-15,Bandung,Indonesia,23.1,19.7,27.1,97,25.3,16.4,Rainy
+2025-06-15,London,United Kingdom,15.6,12.9,20.4,96,31.1,2.6,Drizzle
+2025-06-15,Surabaya,Indonesia,30.8,28.0,36.1,68,15.8,0.0,Sunny
+2025-06-15,Sydney,Australia,13.5,9.7,17.5,78,24.0,34.0,Rainy
+2025-06-15,Tokyo,Japan,26.3,22.0,30.7,73,14.1,0.9,Cloudy
+2025-06-20,Bandung,Indonesia,23.0,19.4,26.3,98,20.6,9.9,Thunderstorm
+2025-06-20,London,United Kingdom,16.6,12.6,21.9,88,14.9,8.4,Rainy
+2025-06-20,Surabaya,Indonesia,31.3,27.3,35.9,62,5.4,0.0,Sunny
+2025-06-20,Sydney,Australia,13.5,10.9,18.4,61,14.7,0.0,Sunny
+2025-06-20,Tokyo,Japan,25.7,22.0,29.2,53,16.0,0.0,Clear
+2025-06-25,Bandung,Indonesia,23.6,20.9,26.7,78,14.9,1.3,Cloudy
+2025-06-25,London,United Kingdom,17.5,14.4,22.2,82,17.1,0.1,Cloudy
+2025-06-25,Surabaya,Indonesia,31.6,28.1,35.7,76,12.0,1.5,Cloudy
+2025-06-25,Sydney,Australia,13.0,10.5,16.8,67,15.2,1.5,Partly Cloudy
+2025-06-25,Tokyo,Japan,25.7,22.4,29.6,79,27.5,26.0,Rainy
+2025-06-30,Bandung,Indonesia,23.5,19.7,27.4,78,18.3,0.9,Partly Cloudy
+2025-06-30,London,United Kingdom,16.3,13.2,21.3,59,15.8,0.0,Sunny
+2025-06-30,Surabaya,Indonesia,29.3,26.2,33.4,95,14.3,16.1,Thunderstorm
+2025-06-30,Sydney,Australia,14.0,11.3,19.1,76,19.4,1.2,Partly Cloudy
+2025-06-30,Tokyo,Japan,25.8,22.3,29.9,72,14.1,1.1,Cloudy
+2025-07-05,Bandung,Indonesia,23.2,20.3,28.1,98,16.7,29.0,Thunderstorm
+2025-07-05,London,United Kingdom,18.7,15.3,23.1,59,13.9,0.0,Sunny
+2025-07-05,Surabaya,Indonesia,29.4,26.5,33.9,65,17.4,0.0,Sunny
+2025-07-05,Sydney,Australia,13.6,9.8,19.1,73,11.2,0.3,Windy
+2025-07-05,Tokyo,Japan,27.1,24.0,30.9,77,24.7,5.0,Rainy
+2025-07-10,Bandung,Indonesia,22.3,18.9,25.4,93,31.5,23.5,Thunderstorm
+2025-07-10,London,United Kingdom,18.6,15.7,23.1,69,17.5,0.0,Sunny
+2025-07-10,Surabaya,Indonesia,29.0,25.3,33.0,56,16.8,0.0,Sunny
+2025-07-10,Sydney,Australia,11.9,7.8,17.0,58,5.5,0.0,Sunny
+2025-07-10,Tokyo,Japan,27.6,24.5,31.3,49,11.6,0.0,Sunny
+2025-07-15,Bandung,Indonesia,22.5,19.3,27.0,93,23.2,13.2,Thunderstorm
+2025-07-15,London,United Kingdom,19.0,14.7,22.8,77,26.9,1.2,Cloudy
+2025-07-15,Surabaya,Indonesia,29.9,26.9,35.0,60,6.1,0.0,Hot/Sunny
+2025-07-15,Sydney,Australia,11.4,8.1,16.4,65,17.6,1.3,Partly Cloudy
+2025-07-15,Tokyo,Japan,28.7,24.2,33.0,71,15.1,0.7,Cloudy
+2025-07-20,Bandung,Indonesia,21.8,19.0,25.0,98,28.7,27.6,Rainy
+2025-07-20,London,United Kingdom,17.3,13.4,21.9,95,19.3,2.6,Drizzle
+2025-07-20,Surabaya,Indonesia,31.6,29.0,35.4,58,7.0,0.0,Hot/Sunny
+2025-07-20,Sydney,Australia,12.8,8.4,17.3,81,18.2,19.9,Rainy
+2025-07-20,Tokyo,Japan,27.5,24.3,31.0,70,18.8,1.9,Cloudy
+2025-07-25,Bandung,Indonesia,22.5,19.4,26.5,82,24.4,1.6,Partly Cloudy
+2025-07-25,London,United Kingdom,17.1,14.4,20.5,77,11.7,1.7,Cloudy
+2025-07-25,Surabaya,Indonesia,28.7,25.7,33.3,73,19.3,1.4,Cloudy
+2025-07-25,Sydney,Australia,13.5,9.4,18.7,50,5.7,0.0,Sunny
+2025-07-25,Tokyo,Japan,29.1,25.7,34.2,85,31.7,33.3,Rainy
+2025-07-30,Bandung,Indonesia,23.7,19.9,28.7,78,24.9,0.6,Cloudy
+2025-07-30,London,United Kingdom,17.5,13.3,21.9,60,6.4,0.0,Sunny
+2025-07-30,Surabaya,Indonesia,30.6,27.8,35.4,94,13.6,2.7,Thunderstorm
+2025-07-30,Sydney,Australia,11.3,8.2,14.4,88,21.1,28.3,Rainy
+2025-07-30,Tokyo,Japan,27.9,24.9,33.4,78,30.6,3.4,Rainy
+2025-08-04,Bandung,Indonesia,21.6,19.1,25.5,82,11.5,1.3,Partly Cloudy
+2025-08-04,London,United Kingdom,16.7,13.4,20.6,84,16.2,1.6,Overcast
+2025-08-04,Surabaya,Indonesia,31.5,28.9,35.8,58,16.4,0.0,Sunny
+2025-08-04,Sydney,Australia,13.0,9.2,17.9,67,19.8,0.1,Windy
+2025-08-04,Tokyo,Japan,26.3,22.0,30.8,53,14.3,0.0,Sunny
+2025-08-09,Bandung,Indonesia,23.4,20.8,28.3,78,10.8,0.6,Partly Cloudy
+2025-08-09,London,United Kingdom,18.7,15.6,23.9,83,24.4,0.5,Overcast
+2025-08-09,Surabaya,Indonesia,28.5,25.9,33.8,93,12.7,17.9,Thunderstorm
+2025-08-09,Sydney,Australia,12.1,8.8,16.2,83,21.9,34.1,Rainy
+2025-08-09,Tokyo,Japan,28.5,25.6,33.4,45,13.2,0.0,Clear
+2025-08-14,Bandung,Indonesia,22.5,18.4,26.9,93,25.2,5.1,Thunderstorm
+2025-08-14,London,United Kingdom,19.4,15.7,23.5,75,17.3,1.3,Overcast
+2025-08-14,Surabaya,Indonesia,28.8,25.1,32.9,90,26.5,17.0,Thunderstorm
+2025-08-14,Sydney,Australia,12.6,8.6,16.0,59,16.0,0.0,Sunny
+2025-08-14,Tokyo,Japan,27.0,22.7,31.3,47,6.0,0.0,Sunny
+2025-08-19,Bandung,Indonesia,20.4,17.6,24.5,97,13.5,16.9,Thunderstorm
+2025-08-19,London,United Kingdom,16.5,13.0,21.8,81,22.7,1.5,Overcast
+2025-08-19,Surabaya,Indonesia,28.1,24.9,31.9,77,10.5,1.9,Cloudy
+2025-08-19,Sydney,Australia,11.7,8.0,16.4,81,29.1,6.5,Rainy
+2025-08-19,Tokyo,Japan,27.2,23.8,30.5,71,27.1,0.7,Cloudy
+2025-08-24,Bandung,Indonesia,22.7,19.1,26.4,94,30.5,25.6,Thunderstorm
+2025-08-24,London,United Kingdom,16.3,12.8,20.2,62,11.1,0.0,Sunny
+2025-08-24,Surabaya,Indonesia,29.7,25.6,34.0,64,15.3,0.0,Sunny
+2025-08-24,Sydney,Australia,14.8,12.0,20.0,54,10.2,0.0,Sunny
+2025-08-24,Tokyo,Japan,25.9,21.6,30.0,50,13.7,0.0,Sunny
+2025-08-29,Bandung,Indonesia,21.2,18.6,25.4,94,27.6,31.0,Thunderstorm
+2025-08-29,London,United Kingdom,15.6,12.8,19.0,91,30.8,13.7,Rainy
+2025-08-29,Surabaya,Indonesia,29.6,26.7,35.0,93,13.1,32.1,Thunderstorm
+2025-08-29,Sydney,Australia,14.8,10.6,18.4,67,21.1,1.3,Windy
+2025-08-29,Tokyo,Japan,26.2,22.7,30.2,58,6.6,0.0,Clear
+2025-09-03,Bandung,Indonesia,22.2,18.0,26.6,93,24.8,4.0,Rainy
+2025-09-03,London,United Kingdom,17.0,13.9,22.4,80,22.3,1.6,Cloudy
+2025-09-03,Surabaya,Indonesia,29.3,25.5,34.2,94,22.0,23.3,Thunderstorm
+2025-09-03,Sydney,Australia,13.0,10.4,16.1,84,16.1,18.2,Rainy
+2025-09-03,Tokyo,Japan,23.3,19.5,27.8,65,23.0,1.3,Cloudy
+2025-09-08,Bandung,Indonesia,21.9,18.8,26.1,98,13.9,10.6,Thunderstorm
+2025-09-08,London,United Kingdom,17.6,13.7,21.1,95,21.3,5.0,Drizzle
+2025-09-08,Surabaya,Indonesia,28.2,24.9,32.7,65,15.6,0.0,Hot/Sunny
+2025-09-08,Sydney,Australia,15.5,12.0,18.7,86,16.8,17.4,Rainy
+2025-09-08,Tokyo,Japan,24.4,21.3,29.2,81,19.4,6.7,Rainy
+2025-09-13,Bandung,Indonesia,22.9,19.5,28.1,98,20.0,14.4,Thunderstorm
+2025-09-13,London,United Kingdom,16.5,13.4,22.0,70,6.7,0.0,Sunny
+2025-09-13,Surabaya,Indonesia,29.1,26.2,33.5,58,11.6,0.0,Sunny
+2025-09-13,Sydney,Australia,13.1,9.9,18.6,67,19.2,0.4,Windy
+2025-09-13,Tokyo,Japan,23.6,21.0,27.3,51,12.0,0.0,Clear
+2025-09-18,Bandung,Indonesia,23.0,20.2,28.3,94,24.3,15.3,Thunderstorm
+2025-09-18,London,United Kingdom,14.5,10.7,19.9,64,15.4,0.0,Sunny
+2025-09-18,Surabaya,Indonesia,30.1,26.4,34.4,94,28.3,12.2,Thunderstorm
+2025-09-18,Sydney,Australia,15.8,11.9,18.9,82,27.7,33.9,Rainy
+2025-09-18,Tokyo,Japan,22.4,19.8,25.7,82,15.0,19.4,Rainy
+2025-09-23,Bandung,Indonesia,22.4,18.4,26.4,78,22.6,1.1,Cloudy
+2025-09-23,London,United Kingdom,16.0,11.8,20.8,77,20.1,1.0,Overcast
+2025-09-23,Surabaya,Indonesia,27.7,24.3,31.7,88,27.5,15.8,Thunderstorm
+2025-09-23,Sydney,Australia,17.3,13.8,21.2,77,16.2,1.8,Partly Cloudy
+2025-09-23,Tokyo,Japan,22.5,18.8,27.3,55,11.8,0.0,Clear
+2025-09-28,Bandung,Indonesia,20.7,17.6,26.1,96,25.8,25.4,Thunderstorm
+2025-09-28,London,United Kingdom,13.4,8.9,18.4,92,31.1,2.6,Drizzle
+2025-09-28,Surabaya,Indonesia,28.7,25.2,33.1,79,22.2,0.2,Cloudy
+2025-09-28,Sydney,Australia,14.5,10.2,19.1,81,22.8,9.1,Rainy
+2025-09-28,Tokyo,Japan,20.1,16.1,24.9,84,31.1,18.2,Rainy
+2025-10-03,Bandung,Indonesia,20.5,17.5,23.8,98,27.4,5.8,Thunderstorm
+2025-10-03,London,United Kingdom,13.2,10.3,18.6,92,30.2,23.5,Rainy
+2025-10-03,Surabaya,Indonesia,26.9,23.3,32.2,95,29.6,32.9,Thunderstorm
+2025-10-03,Sydney,Australia,15.1,11.5,19.4,58,10.4,0.0,Sunny
+2025-10-03,Tokyo,Japan,21.2,17.3,24.5,67,26.3,0.1,Cloudy
+2025-10-08,Bandung,Indonesia,22.4,18.2,26.1,92,24.1,12.2,Rainy
+2025-10-08,London,United Kingdom,11.5,8.8,14.9,81,10.3,1.4,Cloudy
+2025-10-08,Surabaya,Indonesia,30.2,27.0,34.3,87,21.4,30.2,Thunderstorm
+2025-10-08,Sydney,Australia,16.5,13.4,21.2,68,21.5,1.2,Partly Cloudy
+2025-10-08,Tokyo,Japan,19.8,15.4,22.9,45,7.4,0.0,Clear
+2025-10-13,Bandung,Indonesia,20.2,17.1,23.8,98,27.1,10.2,Thunderstorm
+2025-10-13,London,United Kingdom,12.7,10.1,16.0,90,22.1,15.7,Rainy
+2025-10-13,Surabaya,Indonesia,30.3,27.2,35.1,62,13.5,0.0,Sunny
+2025-10-13,Sydney,Australia,19.1,15.2,22.9,54,9.8,0.0,Sunny
+2025-10-13,Tokyo,Japan,17.3,13.9,21.1,57,7.4,0.0,Clear
+2025-10-18,Bandung,Indonesia,21.7,18.3,26.0,84,20.7,1.4,Cloudy
+2025-10-18,London,United Kingdom,12.5,8.2,16.0,69,7.1,0.0,Sunny
+2025-10-18,Surabaya,Indonesia,29.8,26.2,34.1,72,12.0,1.8,Cloudy
+2025-10-18,Sydney,Australia,19.5,16.1,24.2,79,20.9,31.7,Rainy
+2025-10-18,Tokyo,Japan,15.6,11.2,19.8,49,10.4,0.0,Clear
+2025-10-23,Bandung,Indonesia,20.8,18.3,24.4,95,12.9,21.3,Rainy
+2025-10-23,London,United Kingdom,10.4,6.4,15.3,84,16.9,2.0,Cloudy
+2025-10-23,Surabaya,Indonesia,28.2,25.6,33.7,55,5.4,0.0,Sunny
+2025-10-23,Sydney,Australia,20.1,15.8,24.0,74,27.9,0.2,Partly Cloudy
+2025-10-23,Tokyo,Japan,13.9,11.1,17.9,46,13.7,0.0,Sunny
