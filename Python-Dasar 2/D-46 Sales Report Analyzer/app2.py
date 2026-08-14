@@ -85,3 +85,4 @@ print(f"Min Revenue: Rp{min_revenue:,}")
 # Get Total Revenue
 total_revenue = data["total_price"].sum()
 print(f"Total Revenue: Rp{total_revenue:,}")
+

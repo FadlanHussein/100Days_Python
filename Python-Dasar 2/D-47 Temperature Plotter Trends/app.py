@@ -1,5 +1,6 @@
 import pathlib
 import pandas as pd
+# pyrefly: ignore [missing-import]
 import matplotlib.pyplot as plt
 
 # Load Temperature Data
