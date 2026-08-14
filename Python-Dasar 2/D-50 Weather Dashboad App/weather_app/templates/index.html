@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Weather Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
         }
         .weather-card {
             border: 1px solid #ccc;
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 8px;
-            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
         }
     </style>
-</head>
-<body>
-    <div class="container">
+    </head><div class="container">
         <h1>Weather Dashboard</h1>
-        <form action="/" method="POST">
+        <form action="/">
             <label for="city">City:</label>
-            <input type="text" id="city" name="city" required placeholder="Enter city name">
+            <input type="text" id="city" name="city">
             <button type="submit">Get Weather</button>
         </form>
-
-        {% if weather %}
-        <div class="weather-card">
-            <h2>{{ weather['city'] }}</h2>
-            <p><strong>Temperature:</strong> {{ weather['temperature'] }}°C</p>
-            <p><strong>Description:</strong> {{ weather['description'] }}</p>
-            <p><strong>Humidity:</strong> {{ weather['humidity'] }}%</p>
-            <p><strong>Wind Speed:</strong> {{ weather['wind_speed'] }} m/s</p>
-            <p><strong>Pressure:</strong> {{ weather['pressure'] }} hPa</p>
-        </div>
-        {% endif %}
     </div>
+    </form>
+    {% if weather %}
+    <div class="weather-card">
+        <h2>{{ weather['city'] }}</h2>
+        <p>{{ weather['temperature'] }}°C</p>
+        <p>{{ weather['description'] }}</p>
+        <p>Humidity: {{ weather['humidity'] }}%</p>
+        <p>Wind Speed: {{ weather['wind_speed'] }} m/s</p>
+        <p>Pressure: {{ weather['pressure'] }} hPa</p>
+    </div>
+    {% endif %}
+</head>
 </body>
 </html>

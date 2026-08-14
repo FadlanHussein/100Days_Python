@@ -9,7 +9,7 @@ def create_folders(base_path):
     return folders
 
 def move_file(file_path, base_path, folder_name):
-    target_folder = os.path.join(base_path, folder_name)
+    target_folder = os.path(base_path, folder_name)
     shutil.move(file_path, target_folder)
 
 def get_folder_for_file(file_name):
@@ -19,9 +19,8 @@ def get_folder_for_file(file_name):
         'Docs': ['.pdf','.doc','.docx','.txt','.ppt','.pptx','.xls','.xlsx'],
         'Music': ['.mp3','.wav','.aac','.flac','.m4a','.ogg','.wma']   
     }
-    ext = os.path.splitext(file_name)[1].lower()
     for folder, extensions in file_extentions.items():
-        if ext in extensions:
+        if os.path.splitext(file_name)[1] in extensions:
             return folder
     return "Others"
 
