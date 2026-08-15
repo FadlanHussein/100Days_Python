@@ -1,10 +1,4 @@
 {
-  "github.copilot.inlineSuggest.enable": false,
   "editor.inlineSuggest.enabled": true,
-  "editor.quickSuggestions": {
-    "other": false,
-    "comments": false,
-    "strings": false
-  },
-  "editor.inlineCompletionsAccessibilityVerbose": true
+  "github.copilot.editor.enableAutoCompletions": true
 }
