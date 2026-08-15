@@ -1,0 +1,128 @@
+[
+    {
+        "title": "Wake Me Up",
+        "artist": "Avicii",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Avicii\\Unknown Album\\Avicii - Wake Me Up.mp3"
+    },
+    {
+        "title": "Symphony No. 5",
+        "artist": "Beethoven",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Beethoven\\Unknown Album\\Beethoven - Symphony No. 5.wav"
+    },
+    {
+        "title": "Viva La Vida",
+        "artist": "Coldplay",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Coldplay\\Unknown Album\\Coldplay - Viva La Vida.wav"
+    },
+    {
+        "title": "Yellow",
+        "artist": "Coldplay",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Coldplay\\Unknown Album\\Coldplay - Yellow.mp3"
+    },
+    {
+        "title": "Lose Yourself",
+        "artist": "Eminem",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Eminem\\Unknown Album\\Eminem - Lose Yourself.mp3"
+    },
+    {
+        "title": "Chill Beats",
+        "artist": "Lofi Hip Hop",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Lofi Hip Hop\\Unknown Album\\Lofi Hip Hop - Chill Beats.ogg"
+    },
+    {
+        "title": "Animals",
+        "artist": "Martin Garrix",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Martin Garrix\\Unknown Album\\Martin Garrix - Animals.mp3"
+    },
+    {
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Michael Jackson\\Unknown Album\\Michael Jackson - Billie Jean.mp3"
+    },
+    {
+        "title": "Fur Elise",
+        "artist": "Mozart",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Mozart\\Unknown Album\\Mozart - Fur Elise.flac"
+    },
+    {
+        "title": "To the Bone",
+        "artist": "Pamungkas",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Pamungkas\\Unknown Album\\Pamungkas - To the Bone.mp3"
+    },
+    {
+        "title": "Ada Apa Denganmu",
+        "artist": "Peterpan",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Peterpan\\Unknown Album\\Peterpan - Ada Apa Denganmu.mp3"
+    },
+    {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Queen\\Unknown Album\\Queen - Bohemian Rhapsody.mp3"
+    },
+    {
+        "title": "sample_podcast_episode_1",
+        "artist": "Unknown Artist",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Unknown Artist\\Unknown Album\\sample_podcast_episode_1.mp3"
+    },
+    {
+        "title": "Dan",
+        "artist": "Sheila On 7",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Sheila On 7\\Unknown Album\\Sheila On 7 - Dan.mp3"
+    },
+    {
+        "title": "Blank Space",
+        "artist": "Taylor Swift",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Taylor Swift\\Unknown Album\\Taylor Swift - Blank Space.mp3"
+    },
+    {
+        "title": "Love Story",
+        "artist": "Taylor Swift",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Taylor Swift\\Unknown Album\\Taylor Swift - Love Story.flac"
+    },
+    {
+        "title": "Hati-Hati di Jalan",
+        "artist": "Tulus",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Tulus\\Unknown Album\\Tulus - Hati-Hati di Jalan.m4a"
+    },
+    {
+        "title": "Audio Track 01",
+        "artist": "Unknown",
+        "album": "Unknown Album",
+        "genre": "Unknown Genre",
+        "path": "C:\\Users\\ASUS\\Documents\\Belajar Python\\Python-Intermediate\\D-55 Music Playlist Organizer\\Organized_Music\\Unknown\\Unknown Album\\Unknown - Audio Track 01.aac"
+    }
+]
