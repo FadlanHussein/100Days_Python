@@ -6,7 +6,6 @@ def read_markdown_file(file_path):
         return file.read()
 
 def convert_markdown_to_html(markdown_text):
-    # Convert markdown to html with support for tables and code blocks
     return markdown.markdown(markdown_text, extensions=['tables', 'fenced_code'])
 
 def wrap_in_html_template(content):
@@ -21,15 +20,9 @@ def wrap_in_html_template(content):
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #24292e;
         }}
         h1, h2, h3 {{
             color: #333;
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 0.3em;
         }}
         a {{
             color: #1a73e8;
@@ -38,37 +31,26 @@ def wrap_in_html_template(content):
         a:hover {{
             text-decoration: underline;
         }}
-        code {{
-            background-color: #f6f8fa;
-            padding: 0.2em 0.4em;
-            border-radius: 3px;
-            font-family: monospace;
-        }}
-        pre {{
-            background-color: #f6f8fa;
-            padding: 16px;
-            border-radius: 6px;
-            overflow: auto;
-        }}
         table {{
             border-collapse: collapse;
             width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }}
         th, td {{
-            border: 1px solid #dfe2e5;
-            padding: 6px 13px;
-            text-align: left;
+            border: 1px solid #ddd;
+            padding: 8px;
         }}
         th {{
-            background-color: #f6f8fa;
+            background-color: #f2f2f2;
         }}
-        blockquote {{
-            margin: 0;
-            padding: 0 1em;
-            color: #6a737d;
-            border-left: 0.25em solid #dfe2e5;
+        pre {{
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }}
+        code {{
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
         }}
     </style>
 </head>
@@ -81,28 +63,32 @@ def wrap_in_html_template(content):
 def write_html_file(html_content, output_path):
     with open(output_path, "w", encoding="utf-8") as file:
         file.write(html_content)
-    print(f"[OK] HTML file successfully created: {output_path}")
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_path = os.path.join(base_dir, "markdown.md")
-    output_path = os.path.join(base_dir, "example.html")
+    default_in = os.path.join(base_dir, "markdown.md")
+    default_out = os.path.join(base_dir, "example.html")
 
-    if not os.path.exists(input_path):
-        print(f"Error: '{input_path}' not found.")
-        return
+    markdown_file = input("Enter the path to your Markdown file (default: markdown.md): ").strip() or default_in
+    output_file = input("Enter the path to save the HTML file (default: example.html): ").strip() or default_out
 
-    # 1. Baca Markdown
-    markdown_text = read_markdown_file(input_path)
-    
-    # 2. Konversi ke HTML
-    html_content = convert_markdown_to_html(markdown_text)
-    
-    # 3. Bungkus dengan Template CSS & HTML
-    html_with_template = wrap_in_html_template(html_content)
-    
-    # 4. Simpan ke File Output HTML
-    write_html_file(html_with_template, output_path)
+    # Handle jika user memasukkan nama file tanpa path lengkap
+    if not os.path.isabs(markdown_file) and not os.path.exists(markdown_file):
+        rel_in = os.path.join(base_dir, markdown_file)
+        if os.path.exists(rel_in):
+            markdown_file = rel_in
+
+    if not os.path.isabs(output_file):
+        output_file = os.path.join(base_dir, output_file)
+
+    try:
+        markdown_text = read_markdown_file(markdown_file)
+        html_content = convert_markdown_to_html(markdown_text)
+        html_with_template = wrap_in_html_template(html_content)
+        write_html_file(html_with_template, output_file)
+        print(f"HTML file has been generated and saved to {output_file}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     main()
