@@ -1,0 +1,56 @@
+user,movie,rating
+1,Inception,5
+1,The Dark Knight,5
+1,The Matrix,4
+1,Interstellar,5
+1,Avatar,3
+1,Gladiator,4
+2,Inception,4
+2,The Matrix,5
+2,Interstellar,4
+2,Fight Club,5
+2,Forrest Gump,3
+2,Shawshank Redemption,5
+3,The Dark Knight,4
+3,The Matrix,3
+3,Pulp Fiction,5
+3,Fight Club,4
+3,Forrest Gump,5
+3,The Godfather,5
+4,Inception,3
+4,The Dark Knight,5
+4,Interstellar,4
+4,Pulp Fiction,4
+4,Fight Club,5
+4,Titanic,2
+5,Inception,5
+5,The Dark Knight,4
+5,The Matrix,5
+5,Pulp Fiction,1
+5,Forrest Gump,4
+5,Shawshank Redemption,5
+6,Titanic,5
+6,Avatar,4
+6,Forrest Gump,5
+6,Inception,2
+6,Shawshank Redemption,4
+7,The Godfather,5
+7,Pulp Fiction,5
+7,Fight Club,4
+7,The Dark Knight,4
+7,Gladiator,5
+8,Avatar,5
+8,Interstellar,5
+8,Inception,4
+8,The Matrix,4
+8,Titanic,3
+9,Shawshank Redemption,5
+9,The Godfather,5
+9,Forrest Gump,4
+9,Gladiator,4
+9,Pulp Fiction,3
+10,The Dark Knight,5
+10,Inception,4
+10,Fight Club,4
+10,The Matrix,3
+10,Avatar,2
