@@ -5,9 +5,11 @@ import pandas as pd
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
+current_canvas = None
 
 def load_data(file_path):
     return pd.read_csv(file_path)
+
 
 
 # Load dataset
@@ -27,6 +29,7 @@ def plot_stock_data(stock):
     global current_canvas
 
     if not stock:
+        current_canvas = None
         return
 
     filtered_data = stock_data[stock_data['Ticker'] == stock]
