@@ -1,25 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback</title>
-</head>
-<body>
-    <h1>Feedback List</h1>
-    <a href="{{ url_for('contact') }}">Back to Contact</a>
-    <hr>
+  </head>
+  <body>
+    <h1>Feedback</h1>
     <ul>
-        {% for item in feedback %}
-            <li>
-                <strong>Name:</strong> {{ item.name }}<br>
-                <strong>Email:</strong> {{ item.email }}<br>
-                <strong>Message:</strong> {{ item.message }}
-                <hr>
-            </li>
-        {% else %}
-            <li>No feedback yet.</li>
-        {% endfor %}
+      {% for feedback in feedback %}
+      <li>
+        <strong>Name: {{feedback.name}}</strong>
+        <strong>Email: {{feedback.email}}</strong>
+        <strong>Message: {{feedback.message}}</strong>
+        <hr />
+      </li>
+      {% endfor %}
     </ul>
-</body>
+  </body>
 </html>

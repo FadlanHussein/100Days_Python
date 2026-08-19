@@ -1,32 +1,47 @@
 [
-    {
-        "question": "What is the capital of Indonesia?",
-        "answer": "Jakarta",
-        "learned": false
-    },
-    {
-        "question": "What is the currency of Indonesia?",
-        "answer": "Rupiah",
-        "learned": false
-    },
-    {
-        "question": "What is the largest island in Indonesia?",
-        "answer": "Sumatra",
-        "learned": false
-    },
-    {
-        "question": "What keyword is used to define a function in Python?",
-        "answer": "def",
-        "learned": false
-    },
-    {
-        "question": "Which data type is immutable: list or tuple?",
-        "answer": "tuple",
-        "learned": false
-    },
-    {
-        "question": "What is the symbol for comments in Python?",
-        "answer": "#",
-        "learned": false
-    }
+  {
+    "question": "What is the capital of Indonesia?",
+    "answer": "Jakarta",
+    "learned": false
+  },
+  {
+    "question": "What is the currency of Indonesia?",
+    "answer": "Rupiah",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  },
+  {
+    "question": "What is the population of Indonesia?",
+    "answer": "270 million",
+    "learned": false
+  }
 ]
