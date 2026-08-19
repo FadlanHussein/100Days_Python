@@ -8,11 +8,11 @@
   <body>
     <h1>Feedback</h1>
     <ul>
-      {% for feedback in feedback %}
+      {% for item in feedback %}
       <li>
-        <strong>Name: {{feedback.name}}</strong>
-        <strong>Email: {{feedback.email}}</strong>
-        <strong>Message: {{feedback.message}}</strong>
+        <strong>Name: {{ item.name }}</strong>
+        <strong>Email: {{ item.email }}</strong>
+        <strong>Message: {{ item.message }}</strong>
         <hr />
       </li>
       {% endfor %}
