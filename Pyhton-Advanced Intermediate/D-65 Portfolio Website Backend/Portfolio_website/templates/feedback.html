@@ -7,15 +7,15 @@
   </head>
   <body>
     <h1>Feedback</h1>
+    {% for item in feedback %}
     <ul>
-      {% for item in feedback %}
       <li>
         <strong>Name: {{ item.name }}</strong>
         <strong>Email: {{ item.email }}</strong>
         <strong>Message: {{ item.message }}</strong>
         <hr />
       </li>
-      {% endfor %}
     </ul>
+    {% endfor %}
   </body>
 </html>
