@@ -1,0 +1,16 @@
+import os
+import pandas as pd 
+
+def load_file(file_path):
+    if file_path.endswitch(".csv"):
+        return pd.read_csv(file_path)
+    elif file_path.endswitch(".xlsx"):
+        return pd.read_excel(file_path)
+    else:
+        raise ValueError("Unsupported file format Please upload a CSV or Excel file")
+
+data = load_file("data.csv")
+
+print("Data loaded successfully:")
+print(data.head())
+
